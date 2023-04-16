@@ -1,0 +1,29 @@
+.boat-card {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 2%;
+    box-shadow: 0px 1px 1px 1px;
+}
+
+.boat-title {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
