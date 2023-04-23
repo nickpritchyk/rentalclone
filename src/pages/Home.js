@@ -5,8 +5,12 @@ import BoatCard from "../components/BoatCard";
 
 export default function Home() {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className="home-div">
+            <div className="home-jumbo">
+                <h1 className="jumbo-header">
+                    Sail away today with StarboardRentals.
+                </h1>
+            </div>
             <div className="card-deck">
                 <BoatCard />
                 <BoatCard />
