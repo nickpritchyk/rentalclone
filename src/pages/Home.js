@@ -12,15 +12,10 @@ export default function Home() {
                 </h1>
             </div>
             <div className="card-deck">
-                <BoatCard />
-                <BoatCard />
-                <BoatCard />
-                <BoatCard />
-                <BoatCard />
-                <BoatCard />
+                <div className="boat-cards">
+                    <BoatCard />
+                </div>
             </div>
         </div>
-
-
     )
 }
