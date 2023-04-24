@@ -18,7 +18,7 @@ function BoatCard({addToCart}) {
                 <input placeholder="Number of Days" style={{outline: 'none'}}></input>
             </div>
             <div className="add-to-cart-btn">
-                <button onClick={addToCart}> Add to cart </button>
+                <button onClick={() => addToCart("2021 Yacht")}> Add to cart </button>
             </div>
         </div>
     )
