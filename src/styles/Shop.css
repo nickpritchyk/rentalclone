@@ -1,0 +1,11 @@
+.boat {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+    row-gap: 10%;
+}
+
+.boat-deck {
+    display: flex;
+    margin-bottom: 20%;
+}

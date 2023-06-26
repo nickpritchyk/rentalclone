@@ -7,6 +7,7 @@ body {
 }
 
 .nav {
+    height: 8%;
     background-color: white;
     color: black;
     font-size: 25px;
@@ -24,7 +25,6 @@ body {
 .nav a {
     color: inherit;
     text-decoration: none;
-    height: 100%;
     display: flex;
     align-items: center;
     padding: 0.2rem;
