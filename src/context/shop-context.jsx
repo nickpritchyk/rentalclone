@@ -28,7 +28,7 @@ export const ShopContextProvider = (props) => {
         setNumItems((prev) => prev-1)
     }
 
-    const contextValue = {cart, addToCart, removeFromCart, addToCart, numItems}
+    const contextValue = {cart, addToCart, removeFromCart, numItems}
 
 
     return (

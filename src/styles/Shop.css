@@ -1,11 +1,22 @@
 .boat {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     margin-top: 5%;
+    margin-bottom: 20%;
+    justify-content: center;
     row-gap: 10%;
+    grid-column-gap: 25%;
 }
 
 .boat-deck {
     display: flex;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
+}
+
+.shop {
+    margin-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: grid;
 }

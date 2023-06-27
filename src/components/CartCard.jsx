@@ -1,11 +1,11 @@
-import "../styles/BoatCard.css";
+import "../styles/CartCard.css"
 import { ShopContext } from '../context/shop-context'
-import { useContext } from "react";
+import { useContext } from "react"
 
 function BoatCard(props) {
 
     const { id, name, price, img } = props.data
-    const { cart, numItems, removeFromCart } = useContext(ShopContext)
+    const { cart, removeFromCart } = useContext(ShopContext)
     const numberOfDays = cart[id]
 
     return(

@@ -3,15 +3,6 @@ h1 {
     justify-content: center;
 }
 
-.card-deck {
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 50px;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
 .home-jumbo {
     width: 80vw;
     height: 45rem;

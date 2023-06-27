@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import 'react-multi-carousel/lib/styles.css';
 import "../styles/Home.css";
-import BoatCard from "../components/BoatCard";
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 
