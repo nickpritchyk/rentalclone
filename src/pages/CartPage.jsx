@@ -3,8 +3,8 @@
 export default function CartPage(props) {
     return(
         <div className="Cart">
-            <div>
-                Cart
+            <div className=''>
+                Cart Page
             </div>
         </div>
     )
