@@ -14,8 +14,8 @@ export default function Home() {
                 </h1>
                 <div className="jumbo-btns">
                     <div className='btn-hover'>
-                        <Link to="/rent" className={"jumbo-btn"}>
-                            Rent
+                        <Link to="/shop" className={"jumbo-btn"}>
+                            Shop
                         </Link>
                     </div>
                     <div className='btn-hover'>

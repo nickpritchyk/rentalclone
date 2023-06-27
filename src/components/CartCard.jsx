@@ -5,9 +5,8 @@ import { useContext } from "react";
 function BoatCard(props) {
 
     const { id, name, price, img } = props.data
-    const { addToCart, cart } = useContext(ShopContext)
+    const { cart, numItems, removeFromCart } = useContext(ShopContext)
     const numberOfDays = cart[id]
-
 
     return(
         
@@ -18,11 +17,9 @@ function BoatCard(props) {
             <div className="details"> 
                 <p className="name"> { name } </p> 
                 <p> $ { price } </p> 
+                <p> Q: { numberOfDays } </p>
             </div>
-            <div className="dates-input">
-                <input placeholder="Number of Days" style={{outline: 'none'}}></input>
-            </div>
-            <button className="add-to-cart-btn" onClick={() => addToCart (id)}> Add to cart {numberOfDays > 0 && <> | {numberOfDays} </>} </button>
+            <button className="remove" onClick={() => removeFromCart (id)}> Remove </button>
         </div>
     )
 }

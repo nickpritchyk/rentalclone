@@ -1,8 +1,14 @@
 import "../styles/Navbar.css";
 import { NavLink, Link } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { ShopContext } from '../context/shop-context'
+import { useContext } from "react";
 
 
 function Navbar() {
+
+    const { numItems } = useContext(ShopContext)
+
     return(
         <header>
             <nav className="nav">
@@ -16,7 +22,8 @@ function Navbar() {
                     </li>
                     <li>
                         <NavLink to="/cart"> 
-                           
+                           <ShoppingCartIcon style={{fontSize: '32px'}}></ShoppingCartIcon>
+                           <p> { numItems } </p>
                         </NavLink>
                     </li>
                 </ul>

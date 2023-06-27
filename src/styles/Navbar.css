@@ -35,13 +35,18 @@ body {
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .active {
-    background-color: #555;
+    border: 1px solid azure;
 }
 
 .nav li:hover {
-    background-color: #006699;
+    text-decoration: underline;
+}
+
+.nav li {
+    display: flex;
+    flex-direction: row;
 }
