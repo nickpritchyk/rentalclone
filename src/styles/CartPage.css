@@ -6,7 +6,7 @@
 }
 
 .cart {
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 100%;
     overflow: hidden;
@@ -14,11 +14,10 @@
 }
 
 .card-deck {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    flex-direction: column;
-    float: left;
-    margin-left: 10%;
+    width: 100vw;
+    display: flex;
+    margin-left: 5%;
     margin-bottom: 5%;
-    justify-content: center;
+    margin-top: 5%;
+    flex-direction: column;
 }

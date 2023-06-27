@@ -10,14 +10,14 @@ function BoatCard(props) {
 
     return(
         
-        <div className="boat-card">
+        <div className="card">
             <div className="image">
                 <img src="/img/boat1.jpg" alt="Boat"></img>
             </div>
             <div className="details"> 
-                <p className="name"> { name } </p> 
-                <p> $ { price } </p> 
-                <p> Q: { numberOfDays } </p>
+                <p id="name"> { name } </p> 
+                <p id="price"> $ { price } </p> 
+                <p id="quantity"> Q: { numberOfDays } </p>
             </div>
             <button className="remove" onClick={() => removeFromCart (id)}> Remove </button>
         </div>
