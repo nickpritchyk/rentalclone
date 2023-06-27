@@ -10,6 +10,7 @@ export default function CartPage(props) {
 
     console.log(numItems)
     return(
+        <div className="cart-page">
         <div className="cart">
             <div className='card-deck'>
             { BOATDATA.map((res) => {
@@ -17,13 +18,17 @@ export default function CartPage(props) {
                     return <CartCard data={res}></CartCard>
                 } else return null
             })}
+            </div>
             { (numItems) === 0 && 
                 <div className='empty-cart'>
                     <p> Your cart is empty. </p>
                     <Link style={{color: '#038aff', fontSize: 'large'}} className='empty-cart' to='/shop'> Start Shopping </Link>
                 </div>
             }
-            </div>
+        </div>
+        <div className='cart-info'>
+
+        </div>
         </div>
     )
 }

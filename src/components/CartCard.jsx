@@ -1,6 +1,7 @@
 import "../styles/CartCard.css"
 import { ShopContext } from '../context/shop-context'
 import { useContext } from "react"
+import CloseIcon from '@mui/icons-material/Close';
 
 function BoatCard(props) {
 
@@ -11,15 +12,15 @@ function BoatCard(props) {
     return(
         
         <div className="card">
-            <div className="image">
+            <div className="img">
                 <img src="/img/boat1.jpg" alt="Boat"></img>
             </div>
             <div className="details"> 
                 <p id="name"> { name } </p> 
                 <p id="price"> $ { price } </p> 
                 <p id="quantity"> Q: { numberOfDays } </p>
+                <CloseIcon className="remove" onClick={() => removeFromCart (id)}> Remove </CloseIcon>
             </div>
-            <button className="remove" onClick={() => removeFromCart (id)}> Remove </button>
         </div>
     )
 }
