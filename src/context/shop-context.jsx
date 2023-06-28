@@ -15,8 +15,18 @@ export const ShopContextProvider = (props) => {
 
     const [cart, setCart] = useState(getDefaultCart());
     const [numItems, setNumItems] = useState(0);
+    // const [totalPrice, setTotalPrice] = useState(0.0)
 
-    // console.log(numItems)
+    const getTotalPrice = () => {
+        let totalPrice = 0;
+        for (const item in cart) {
+          if (cart[item] > 0) {
+            let itemInfo = BOATDATA.find((product) => product.id === Number(item));
+            totalPrice += cart[item] * itemInfo.price;
+          }
+        }
+        return totalPrice;
+      };
 
     function addToCart(id) {
         setCart((prev) => ({...prev, [id]: prev[id]+1}))
@@ -28,7 +38,7 @@ export const ShopContextProvider = (props) => {
         setNumItems((prev) => prev-1)
     }
 
-    const contextValue = {cart, addToCart, removeFromCart, numItems}
+    const contextValue = {cart, addToCart, removeFromCart, numItems, getTotalPrice}
 
 
     return (

@@ -6,7 +6,7 @@ import '../styles/CartPage.css'
 import { Link } from 'react-router-dom';
 
 export default function CartPage(props) {
-    const { cart, numItems } = useContext(ShopContext)
+    const { cart, numItems, getTotalPrice } = useContext(ShopContext)
 
     console.log(numItems)
     return(
@@ -27,7 +27,7 @@ export default function CartPage(props) {
             }
         </div>
         <div className='cart-info'>
-
+            <p> { getTotalPrice() }</p>
         </div>
         </div>
     )
